@@ -7,8 +7,6 @@ export default function Home() {
       <Head>
         <title>Facebook</title>
       </Head>
-      <h1>Lets's build facebook together</h1>
-
       <Header />
     </div>
   );
