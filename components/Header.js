@@ -45,6 +45,14 @@ function Header() {
           <HeaderIcon Icon={UserGroupIcon} />
         </div>
       </div>
+
+      <div className="flex items-center justify-end sm:space-x-2">
+        <p className="whitespace-nowrap font-semibold pr-3">Shafikul Islam</p>
+        <BellIcon className="icon" />
+        <ChatIcon className="icon" />
+        <ChevronDownIcon className="icon" />
+        <ViewGridAddIcon className="icon" />
+      </div>
     </div>
   );
 }
