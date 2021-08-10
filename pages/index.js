@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import { getSession } from "next-auth/client";
 import Login from "../components/Auth/Login";
 import Sidebar from "../components/Sidebar";
+import Feed from "../components/Feed";
 
 export default function Home({ session }) {
   if (!session) return <Login />;
@@ -12,8 +13,9 @@ export default function Home({ session }) {
         <title>Facebook</title>
       </Head>
       <Header />
-      <main>
+      <main className="flex">
         <Sidebar />
+        <Feed />
       </main>
     </div>
   );
