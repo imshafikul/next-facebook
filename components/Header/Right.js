@@ -6,6 +6,7 @@ import {
   ChevronDownIcon,
   ViewGridAddIcon,
 } from "@heroicons/react/solid";
+import UserAvatar from "../Common/UserAvatar";
 
 function HeaderRight() {
   const [session] = useSession();
@@ -16,15 +17,7 @@ function HeaderRight() {
         className="flex items-center p-1 rounded-full hover:bg-gray-100 cursor-pointer"
         onClick={signOut}
       >
-        {session && (
-          <Image
-            src={session.user.image}
-            className="rounded-full"
-            width={32}
-            height={32}
-            layout="fixed"
-          />
-        )}
+        <UserAvatar />
         <p className="whitespace-nowrap font-semibold  pl-1 pr-1">
           {session && session.user.name}
         </p>
