@@ -7,7 +7,7 @@ function InputBox() {
   const postStatus = (e) => e.preventDefault();
 
   return (
-    <div className="bg-white shadow mt-8 max-w-[800px] mx-auto px-4 py-3 rounded-lg">
+    <div className="bg-white shadow mt-8 justify-center mx-auto px-4 py-3 rounded-lg">
       <div className="flex items-center">
         <UserAvatar size={40} />
         <form
