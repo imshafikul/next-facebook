@@ -11,22 +11,59 @@ function InputBox() {
   const inputRef = useRef(null);
   const fileInputRef = useRef(null);
   const [fileToPost, setFileToPost] = useState(null);
+  const [progress, setProgress] = useState(0);
+  const [uploading, setUploading] = useState(false);
 
   const postStatus = (e) => {
     e.preventDefault();
     const { value } = inputRef.current;
-
     if (!value) return;
-
     const { name, email, image } = session.user || {};
 
-    db.collection("posts").add({
-      message: value,
-      name,
-      email,
-      image,
-      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-    });
+    db.collection("posts")
+      .add({
+        message: value,
+        name,
+        email,
+        image,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      })
+      .then((doc) => {
+        if (fileToPost) {
+          const storageRef = storage.ref(`posts/${doc.id}`);
+          const upload = storageRef.putString(fileToPost, "data_url");
+
+          upload.on(
+            "state_change",
+            (snapshot) => {
+              var progress =
+                (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+
+              setUploading(true);
+              setProgress(Math.round(progress));
+            },
+            () => {
+              console.log("File uploading failed, please try again! ");
+            },
+            () => {
+              storage
+                .ref("posts")
+                .child(doc.id)
+                .getDownloadURL()
+                .then((url) => {
+                  db.collection("posts").doc(doc.id).set(
+                    {
+                      postImage: url,
+                    },
+                    { merge: true }
+                  );
+                });
+
+              removeFile();
+            }
+          );
+        }
+      });
 
     inputRef.current.value = "";
   };
@@ -71,6 +108,10 @@ function InputBox() {
               className="object-cover rounded-full h-10 w-10"
             />
             <XIcon className="absolute right-0 top-0 text-xs text-red-700 h-5" />
+
+            {uploading && (
+              <span className="text-xs text-blue-700">{progress}%</span>
+            )}
           </div>
         )}
       </div>
@@ -93,7 +134,7 @@ function InputBox() {
             className="hidden"
             type="file"
             ref={fileInputRef}
-            accept="image/*"
+            // accept="image/*"
             onChange={handleFileChange}
           />
         </button>
