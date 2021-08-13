@@ -1,10 +1,33 @@
+import { useRef } from "react";
 import UserAvatar from "../Common/UserAvatar";
 import { VideoCameraIcon, PhotographIcon } from "@heroicons/react/solid";
-
 import { EmojiHappyIcon } from "@heroicons/react/outline";
+import { db, storage } from "../../firebase";
+import { useSession } from "next-auth/client";
+import firebase from "firebase";
 
 function InputBox() {
-  const postStatus = (e) => e.preventDefault();
+  const [session] = useSession();
+  const inputRef = useRef("");
+
+  const { name, email, image } = session.user || {};
+
+  const postStatus = (e) => {
+    e.preventDefault();
+    const { value } = inputRef.current;
+
+    if (!value) return;
+
+    db.collection("posts").add({
+      message: value,
+      name,
+      email,
+      image,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+    });
+
+    inputRef.current.value = "";
+  };
 
   return (
     <div className="bg-white shadow mt-8 justify-center mx-auto px-4 py-3 rounded-lg">
@@ -16,7 +39,10 @@ function InputBox() {
         >
           <input
             className="flex-grow bg-transparent outline-none px-2"
-            placeholder="What's on your mind, Shafikul?"
+            placeholder={`What's on your mind, ${
+              session && session.user.name
+            }?`}
+            ref={inputRef}
           />
         </form>
       </div>
