@@ -5,6 +5,7 @@ import {
   ThumbUpIcon,
   ChatIcon,
   ShareIcon,
+  CameraIcon,
 } from "@heroicons/react/outline";
 import moment from "moment";
 import Image from "next/image";
@@ -57,7 +58,20 @@ function Post({ name, image, message, postImage, timestamp }) {
         </div>
         <hr className="my-1" />
 
-        
+        <div className="flex py-2 items-center">
+          <UserAvatar size={30} />
+          <div className="flex bg-gray-100 flex-grow rounded-full pl-3 py-1 ml-2">
+            <input
+              type="text"
+              placeholder="Write a comment..."
+              className="bg-transparent outline-none flex-1"
+            />
+            <div className="flex ml-2">
+              <EmojiHappyIcon className="h-8 w-8 p-1 hover:bg-gray-200 rounded-full font-light cursor-pointer text-gray-500" />
+              <CameraIcon className="h-8 w-8 p-1 hover:bg-gray-200 rounded-full font-light cursor-pointer text-gray-500" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
