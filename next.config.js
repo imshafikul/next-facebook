@@ -6,6 +6,7 @@ module.exports = {
       "github.githubassets.com",
       "avatars.githubusercontent.com",
       "scontent.fdac41-1.fna.fbcdn.net",
+      "firebasestorage.googleapis.com",
     ],
   },
 };
