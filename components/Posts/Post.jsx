@@ -5,12 +5,12 @@ import {
   ThumbUpIcon,
   ChatIcon,
   ShareIcon,
-  CameraIcon,
 } from "@heroicons/react/outline";
 import moment from "moment";
 import Image from "next/image";
+import CommentInputBox from "./CommentInputBox";
 
-function Post({ name, image, message, postImage, timestamp }) {
+function Post({ id, name, image, message, postImage, timestamp }) {
   return (
     <div className="bg-white shadow mt-4 justify-center mx-auto rounded-lg">
       <div className="px-4 py-3 ">
@@ -53,25 +53,12 @@ function Post({ name, image, message, postImage, timestamp }) {
             <ChatIcon className="h-6 mr-1" /> Comment
           </div>
           <div className="flex justify-center flex-1 cursor-pointer hover:bg-gray-100 py-2 rounded-md text-gray-600 text-md font-md">
-            <ShareIcon className="h-6 mr-1" /> Comment
+            <ShareIcon className="h-6 mr-1" /> Share
           </div>
         </div>
         <hr className="my-1" />
 
-        <div className="flex py-2 items-center">
-          <UserAvatar size={30} />
-          <div className="flex bg-gray-100 flex-grow rounded-full pl-3 py-1 ml-2">
-            <input
-              type="text"
-              placeholder="Write a comment..."
-              className="bg-transparent outline-none flex-1"
-            />
-            <div className="flex ml-2">
-              <EmojiHappyIcon className="h-8 w-8 p-1 hover:bg-gray-200 rounded-full font-light cursor-pointer text-gray-500" />
-              <CameraIcon className="h-8 w-8 p-1 hover:bg-gray-200 rounded-full font-light cursor-pointer text-gray-500" />
-            </div>
-          </div>
-        </div>
+        <CommentInputBox postId={id} />
       </div>
     </div>
   );
