@@ -7,6 +7,10 @@ module.exports = {
       "avatars.githubusercontent.com",
       "scontent.fdac41-1.fna.fbcdn.net",
       "firebasestorage.googleapis.com",
+      "www.biography.com",
+      "upload.wikimedia.org",
+      "api.time.com",
+      "thumbor.forbes.com",
     ],
   },
 };
