@@ -17,7 +17,7 @@ function CommentInputBox({ postId }) {
     const comment = {
       message: value,
       timestamp: firebase.firestore.Timestamp.now(),
-      userAvatrar: users[Math.floor(Math.random(0, 2))],
+      user: users[Math.floor(Math.random(0, 2))],
     };
 
     try {

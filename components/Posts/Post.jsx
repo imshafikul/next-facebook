@@ -8,9 +8,10 @@ import {
 } from "@heroicons/react/outline";
 import moment from "moment";
 import Image from "next/image";
+import CommentCard from "./CommentCard";
 import CommentInputBox from "./CommentInputBox";
 
-function Post({ id, name, image, message, postImage, timestamp }) {
+function Post({ id, name, image, message, postImage, timestamp, comments }) {
   return (
     <div className="bg-white shadow mt-4 justify-center mx-auto rounded-lg">
       <div className="px-4 py-3 ">
@@ -59,6 +60,9 @@ function Post({ id, name, image, message, postImage, timestamp }) {
         <hr className="my-1" />
 
         <CommentInputBox postId={id} />
+        {comments.map((comment) => (
+          <CommentCard {...comment} />
+        ))}
       </div>
     </div>
   );

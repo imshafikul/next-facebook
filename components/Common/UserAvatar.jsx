@@ -12,7 +12,7 @@ function UserAvatar({ size, src }) {
       {session && (
         <Image
           src={src || session.user.image}
-          className="rounded-full"
+          className="rounded-full border"
           width={size}
           height={size}
           layout="fixed"
