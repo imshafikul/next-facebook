@@ -27,6 +27,7 @@ function InputBox() {
         email,
         image,
         timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+        comments: [],
       })
       .then((doc) => {
         if (fileToPost) {

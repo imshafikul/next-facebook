@@ -4,9 +4,9 @@ import Post from "./Post";
 import { v4 as uuidv4 } from "uuid";
 
 function Posts() {
-  const [posts] = useCollection(db.collection("posts"));
-
-  console.log(posts);
+  const [posts] = useCollection(
+    db.collection("posts").orderBy("timestamp", "desc")
+  );
 
   return (
     <div>
