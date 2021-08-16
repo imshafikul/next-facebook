@@ -7,6 +7,7 @@ function StoryCard({ name, src, avatar }) {
         src={src}
         layout="fill"
         className="object-cover filter brightness-75 rounded-full lg:rounded-3xl group-hover:brightness-100 transition duration-200"
+        alt={name}
       />
       <Image
         src={avatar}
@@ -15,6 +16,7 @@ function StoryCard({ name, src, avatar }) {
         className="rounded-full absolute top-20 z-50  opacity-0 lg:opacity-100"
         layout="fixed"
         objectFit="cover"
+        alt={name}
       />
       <p className="absolute bottom-4 w-5/6 text-white tex-sm font-bold truncate opacity-0 lg:opacity-100">
         {name}

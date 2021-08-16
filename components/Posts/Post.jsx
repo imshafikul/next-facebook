@@ -10,6 +10,7 @@ import moment from "moment";
 import Image from "next/image";
 import CommentCard from "./CommentCard";
 import CommentInputBox from "./CommentInputBox";
+import { v4 as uuidv4 } from "uuid";
 
 function Post({ id, name, image, message, postImage, timestamp, comments }) {
   return (
@@ -33,7 +34,12 @@ function Post({ id, name, image, message, postImage, timestamp, comments }) {
 
       {postImage && (
         <div className="relative h-56 md:h-h2 lg:h-96 bg-white mb-3 border-2">
-          <Image src={postImage} objectFit="cover" layout="fill" />
+          <Image
+            src={postImage}
+            objectFit="cover"
+            layout="fill"
+            alt={message}
+          />
         </div>
       )}
 
@@ -65,7 +71,7 @@ function Post({ id, name, image, message, postImage, timestamp, comments }) {
 
         <CommentInputBox postId={id} />
         {comments.map((comment) => (
-          <CommentCard {...comment} />
+          <CommentCard key={uuidv4} {...comment} />
         ))}
       </div>
     </div>

@@ -5,6 +5,7 @@ import { EmojiHappyIcon } from "@heroicons/react/outline";
 import { db, storage } from "../../firebase";
 import { useSession } from "next-auth/client";
 import firebase from "firebase";
+import Image from "next/image";
 
 function InputBox() {
   const [session] = useSession();
@@ -104,9 +105,11 @@ function InputBox() {
             className="relative flex items-center justify-center flex-col ml-2 cursor-pointer h-10 w-10 rounded-full transition transform duration-200 hover:scale-105 filter hover:brightness-110"
             onClick={removeFile}
           >
-            <img
+            <Image
               src={fileToPost}
               className="object-cover rounded-full h-10 w-10"
+              layout="fill"
+              alt="filename"
             />
             <XIcon className="absolute right-0 top-0 text-xs text-red-700 h-5" />
 

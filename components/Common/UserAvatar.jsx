@@ -17,6 +17,7 @@ function UserAvatar({ size, src }) {
             width={size}
             height={size}
             layout="fixed"
+            alt={session.user.name || ""}
           />
         )}
       </div>
