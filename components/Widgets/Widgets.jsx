@@ -14,9 +14,9 @@ function Widgets() {
       <div className="flex justify-between text-gray-500 mb-5 items-center">
         <div className="text-xl">Contact</div>
         <div className="flex space-x-2">
-          <VideoCameraIcon className="h-8 w-8 hover:bg-gray-200 rounded-full p-2 cursor-pointer" />
-          <SearchIcon className="h-8 w-8 hover:bg-gray-200 rounded-full p-2 cursor-pointer" />
-          <DotsCircleHorizontalIcon className="h-8 w-8 hover:bg-gray-200 rounded-full p-2 cursor-pointer" />
+          <VideoCameraIcon className="h-8 w-8 hover:bg-gray-200 rounded-full p-1.5 cursor-pointer" />
+          <SearchIcon className="h-8 w-8 hover:bg-gray-200 rounded-full p-1.5 cursor-pointer" />
+          <DotsCircleHorizontalIcon className="h-8 w-8 hover:bg-gray-200 rounded-full p-1.5 cursor-pointer" />
         </div>
       </div>
 
