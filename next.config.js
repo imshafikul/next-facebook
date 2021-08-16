@@ -11,6 +11,7 @@ module.exports = {
       "upload.wikimedia.org",
       "api.time.com",
       "thumbor.forbes.com",
+      "images.unsplash.com",
     ],
   },
 };

@@ -1,72 +1,47 @@
 const stories = [
   {
-    name: "Shekh Al Raihan",
+    name: "Daniel J. Schwarz",
     src:
-      "https://scontent.fdac41-1.fna.fbcdn.net/v/t51.36329-10/p320x320/234492634_3127530884144630_6030941725552311321_n.jpg?_nc_cat=105&ccb=1-4&_nc_sid=ad6a45&_nc_eui2=AeH4x_XHBXQnsx035X9HLhvexLvp6jO1N4_Eu-nqM7U3j9Di36LVhX0UEAtGwhM3XgCpS_f2nzrFq9_jWVl2iUrn&_nc_ohc=DRpgX9f3k8kAX-qRzI2&_nc_ht=scontent.fdac41-1.fna&oh=3f62f84c34e69c755772e9276c194cd5&oe=61182142",
+      "https://images.unsplash.com/photo-1629118365836-d6ff579b1843?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
     profile: "https://www.facebook.com/rtralrayhan",
     avatar:
-      "https://scontent.fdac41-1.fna.fbcdn.net/v/t1.6435-1/cp0/p80x80/160176167_4455944951099406_4069609551516178372_n.jpg?_nc_cat=110&ccb=1-4&_nc_sid=7206a8&_nc_eui2=AeFe3PmDdmPN6qDJDcC8XGZmr4rdqAA5G5uvit2oADkbmwsqhvWTQ2P4HoV_qBMxQulrl7W9JWT61lJe_XAAAH35&_nc_ohc=_PEv9dkaa7UAX8yya8H&_nc_ht=scontent.fdac41-1.fna&oh=e983200c15d99a1c444c72f437cefa88&oe=61364ECA",
+      "https://images.unsplash.com/profile-1603099296368-7a6c514c2386image?dpr=2&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff",
   },
   {
-    name: "Shafiqur Rahman Ayon",
+    name: "Krzysztof Hepner",
     src:
-      "https://scontent.fdac41-1.fna.fbcdn.net/v/t1.6435-9/p320x320/228404269_10223559697913380_3963183884678147369_n.jpg?_nc_cat=111&ccb=1-4&_nc_sid=365331&_nc_eui2=AeHpf2GQRTLV1BjuDCkwTn-T3ow9_ocA5UHejD3-hwDlQUTkd61zavmunCMV2b1ffCkv9GtTU300Mmt6p42-g55X&_nc_ohc=4glzd7PAGiMAX_MOl9j&_nc_ht=scontent.fdac41-1.fna&oh=fffb46787c68543f61f0e186d751bbe6&oe=6139C91E",
+      "https://images.unsplash.com/photo-1629059042645-8c1bee4f98a0?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
     profile: "https://www.facebook.com/shafiqur.ayon",
     avatar:
-      "https://scontent.fdac41-1.fna.fbcdn.net/v/t1.6435-1/cp0/p80x80/186476216_10223094198876195_2775086453362853072_n.jpg?_nc_cat=107&ccb=1-4&_nc_sid=7206a8&_nc_eui2=AeFoxPkwsQIJUqOTBe5KvuBzU2CErL2BljVTYISsvYGWNZ8Kc_fuJRbd_TOfQnRPEqM1hPuQvprVcfZuRsChRKve&_nc_ohc=YgZh3HM3EJMAX8y3WvU&_nc_ht=scontent.fdac41-1.fna&oh=33ae8c53ef6a503a73051460bcdc67fe&oe=6139A902",
+      "https://images.unsplash.com/profile-1606439660375-f871bf83bf86image?dpr=2&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff",
   },
   {
-    name: "Anam Ahmed",
+    name: "Brad Starkey",
     src:
-      "https://scontent.fdac41-1.fna.fbcdn.net/v/t1.6435-9/p320x320/231278383_4627241163954358_4056198691259871146_n.jpg?_nc_cat=110&ccb=1-4&_nc_sid=365331&_nc_eui2=AeGxpsQElTbMDl1L8U3RfoEY_8a7j_iSCC7_xruP-JIILsLESzvugEDGQRup73sgdeC_QT4sjXeJjF_Jx6Jj_tL5&_nc_ohc=0LHNPjflO5wAX-It5zs&_nc_ht=scontent.fdac41-1.fna&oh=91fcfad362c92aeecdc4c99904b5696b&oe=61392906",
+      "https://images.unsplash.com/photo-1629102981237-c44ffad32775?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
     profile: "https://www.facebook.com/Theanam",
     avatar:
-      "https://scontent.fdac41-1.fna.fbcdn.net/v/t1.6435-1/cp0/p80x80/87883196_3068348596510297_7131804550901530624_n.jpg?_nc_cat=106&ccb=1-4&_nc_sid=7206a8&_nc_eui2=AeH3kVwDgEFnyWcg30rulGYQpeHgWq7SxNyl4eBartLE3DYBA5RZIsw6_AD0jpgllrDBzM42JkpTWIGZ9d1zrqC3&_nc_ohc=SGM92URTwNEAX_vBfBx&_nc_ht=scontent.fdac41-1.fna&oh=63467e8f5bd7300b89bc5950b8724ad6&oe=6139B5F8",
+      "https://images.unsplash.com/profile-1598009740954-e1016b43c5baimage?dpr=2&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff",
   },
   {
-    name: "Shekh Al Raihan",
+    name: "Alex Rybin",
     src:
-      "https://scontent.fdac41-1.fna.fbcdn.net/v/t51.36329-10/p320x320/234492634_3127530884144630_6030941725552311321_n.jpg?_nc_cat=105&ccb=1-4&_nc_sid=ad6a45&_nc_eui2=AeH4x_XHBXQnsx035X9HLhvexLvp6jO1N4_Eu-nqM7U3j9Di36LVhX0UEAtGwhM3XgCpS_f2nzrFq9_jWVl2iUrn&_nc_ohc=DRpgX9f3k8kAX-qRzI2&_nc_ht=scontent.fdac41-1.fna&oh=3f62f84c34e69c755772e9276c194cd5&oe=61182142",
+      "https://images.unsplash.com/photo-1629058546203-f38da6cfff04?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
     profile: "https://www.facebook.com/rtralrayhan",
     avatar:
-      "https://scontent.fdac41-1.fna.fbcdn.net/v/t1.6435-1/cp0/p80x80/160176167_4455944951099406_4069609551516178372_n.jpg?_nc_cat=110&ccb=1-4&_nc_sid=7206a8&_nc_eui2=AeFe3PmDdmPN6qDJDcC8XGZmr4rdqAA5G5uvit2oADkbmwsqhvWTQ2P4HoV_qBMxQulrl7W9JWT61lJe_XAAAH35&_nc_ohc=_PEv9dkaa7UAX8yya8H&_nc_ht=scontent.fdac41-1.fna&oh=e983200c15d99a1c444c72f437cefa88&oe=61364ECA",
+      "https://images.unsplash.com/profile-1604846961495-65c94cfbe6a1image?dpr=2&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff",
   },
   {
-    name: "Shafiqur Rahman Ayon",
+    name: "Vladislav Filippov",
     src:
-      "https://scontent.fdac41-1.fna.fbcdn.net/v/t1.6435-9/p320x320/228404269_10223559697913380_3963183884678147369_n.jpg?_nc_cat=111&ccb=1-4&_nc_sid=365331&_nc_eui2=AeHpf2GQRTLV1BjuDCkwTn-T3ow9_ocA5UHejD3-hwDlQUTkd61zavmunCMV2b1ffCkv9GtTU300Mmt6p42-g55X&_nc_ohc=4glzd7PAGiMAX_MOl9j&_nc_ht=scontent.fdac41-1.fna&oh=fffb46787c68543f61f0e186d751bbe6&oe=6139C91E",
+      "https://images.unsplash.com/photo-1629055231779-cb9eec2e83da?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
     profile: "https://www.facebook.com/shafiqur.ayon",
     avatar:
-      "https://scontent.fdac41-1.fna.fbcdn.net/v/t1.6435-1/cp0/p80x80/186476216_10223094198876195_2775086453362853072_n.jpg?_nc_cat=107&ccb=1-4&_nc_sid=7206a8&_nc_eui2=AeFoxPkwsQIJUqOTBe5KvuBzU2CErL2BljVTYISsvYGWNZ8Kc_fuJRbd_TOfQnRPEqM1hPuQvprVcfZuRsChRKve&_nc_ohc=YgZh3HM3EJMAX8y3WvU&_nc_ht=scontent.fdac41-1.fna&oh=33ae8c53ef6a503a73051460bcdc67fe&oe=6139A902",
+      "https://images.unsplash.com/profile-1623527510588-6e00f1de54caimage?dpr=2&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff",
   },
 ];
 
-const users = [
-  {
-    name: "Shekh Al Raihan",
-    src:
-      "https://scontent.fdac41-1.fna.fbcdn.net/v/t51.36329-10/p320x320/234492634_3127530884144630_6030941725552311321_n.jpg?_nc_cat=105&ccb=1-4&_nc_sid=ad6a45&_nc_eui2=AeH4x_XHBXQnsx035X9HLhvexLvp6jO1N4_Eu-nqM7U3j9Di36LVhX0UEAtGwhM3XgCpS_f2nzrFq9_jWVl2iUrn&_nc_ohc=DRpgX9f3k8kAX-qRzI2&_nc_ht=scontent.fdac41-1.fna&oh=3f62f84c34e69c755772e9276c194cd5&oe=61182142",
-    profile: "https://www.facebook.com/rtralrayhan",
-    avatar:
-      "https://scontent.fdac41-1.fna.fbcdn.net/v/t1.6435-1/cp0/p80x80/160176167_4455944951099406_4069609551516178372_n.jpg?_nc_cat=110&ccb=1-4&_nc_sid=7206a8&_nc_eui2=AeFe3PmDdmPN6qDJDcC8XGZmr4rdqAA5G5uvit2oADkbmwsqhvWTQ2P4HoV_qBMxQulrl7W9JWT61lJe_XAAAH35&_nc_ohc=_PEv9dkaa7UAX8yya8H&_nc_ht=scontent.fdac41-1.fna&oh=e983200c15d99a1c444c72f437cefa88&oe=61364ECA",
-  },
-  {
-    name: "Shafiqur Rahman Ayon",
-    src:
-      "https://scontent.fdac41-1.fna.fbcdn.net/v/t1.6435-9/p320x320/228404269_10223559697913380_3963183884678147369_n.jpg?_nc_cat=111&ccb=1-4&_nc_sid=365331&_nc_eui2=AeHpf2GQRTLV1BjuDCkwTn-T3ow9_ocA5UHejD3-hwDlQUTkd61zavmunCMV2b1ffCkv9GtTU300Mmt6p42-g55X&_nc_ohc=4glzd7PAGiMAX_MOl9j&_nc_ht=scontent.fdac41-1.fna&oh=fffb46787c68543f61f0e186d751bbe6&oe=6139C91E",
-    profile: "https://www.facebook.com/shafiqur.ayon",
-    avatar:
-      "https://scontent.fdac41-1.fna.fbcdn.net/v/t1.6435-1/cp0/p80x80/186476216_10223094198876195_2775086453362853072_n.jpg?_nc_cat=107&ccb=1-4&_nc_sid=7206a8&_nc_eui2=AeFoxPkwsQIJUqOTBe5KvuBzU2CErL2BljVTYISsvYGWNZ8Kc_fuJRbd_TOfQnRPEqM1hPuQvprVcfZuRsChRKve&_nc_ohc=YgZh3HM3EJMAX8y3WvU&_nc_ht=scontent.fdac41-1.fna&oh=33ae8c53ef6a503a73051460bcdc67fe&oe=6139A902",
-  },
-  {
-    name: "Anam Ahmed",
-    src:
-      "https://scontent.fdac41-1.fna.fbcdn.net/v/t1.6435-9/p320x320/231278383_4627241163954358_4056198691259871146_n.jpg?_nc_cat=110&ccb=1-4&_nc_sid=365331&_nc_eui2=AeGxpsQElTbMDl1L8U3RfoEY_8a7j_iSCC7_xruP-JIILsLESzvugEDGQRup73sgdeC_QT4sjXeJjF_Jx6Jj_tL5&_nc_ohc=0LHNPjflO5wAX-It5zs&_nc_ht=scontent.fdac41-1.fna&oh=91fcfad362c92aeecdc4c99904b5696b&oe=61392906",
-    profile: "https://www.facebook.com/Theanam",
-    avatar:
-      "https://scontent.fdac41-1.fna.fbcdn.net/v/t1.6435-1/cp0/p80x80/87883196_3068348596510297_7131804550901530624_n.jpg?_nc_cat=106&ccb=1-4&_nc_sid=7206a8&_nc_eui2=AeH3kVwDgEFnyWcg30rulGYQpeHgWq7SxNyl4eBartLE3DYBA5RZIsw6_AD0jpgllrDBzM42JkpTWIGZ9d1zrqC3&_nc_ohc=SGM92URTwNEAX_vBfBx&_nc_ht=scontent.fdac41-1.fna&oh=63467e8f5bd7300b89bc5950b8724ad6&oe=6139B5F8",
-  },
-];
+const users = [...stories];
 
 const contacts = [
   {
