@@ -20,7 +20,11 @@ function Post({ id, name, image, message, postImage, timestamp, comments }) {
           <div className="ml-2 flex flex-col justify-center">
             <p className="font-medium m-0">{name}</p>
             <span className="text-gray-400 text-xs">
-              {moment(new Date(timestamp?.toDate().toLocaleString())).fromNow()}
+              {timestamp
+                ? moment(
+                    new Date(timestamp?.toDate().toLocaleString())
+                  ).fromNow()
+                : "Loading..."}
             </span>
           </div>
         </div>
