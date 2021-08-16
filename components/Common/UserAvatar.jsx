@@ -8,17 +8,19 @@ function UserAvatar({ size, src }) {
   if (!session && !src) return <></>;
 
   return (
-    <>
-      {session && (
-        <Image
-          src={src || session.user.image}
-          className="rounded-full border"
-          width={size}
-          height={size}
-          layout="fixed"
-        />
-      )}
-    </>
+    <div>
+      <div className="border rounded-full flex">
+        {session && (
+          <Image
+            src={src || session.user.image}
+            className="rounded-full"
+            width={size}
+            height={size}
+            layout="fixed"
+          />
+        )}
+      </div>
+    </div>
   );
 }
 
