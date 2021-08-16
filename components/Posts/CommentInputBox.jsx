@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import UserAvatar from "../Common/UserAvatar";
 import { EmojiHappyIcon, CameraIcon } from "@heroicons/react/outline";
 import PropTypes from "prop-types";
@@ -14,10 +14,12 @@ function CommentInputBox({ postId }) {
     const { value } = inputRef.current;
     if (!value) return;
 
+    const user = users[Math.floor(Math.random() * 4) + 1];
+
     const comment = {
       message: value,
       timestamp: firebase.firestore.Timestamp.now(),
-      user: users[Math.floor(Math.random(0, 2))],
+      user,
     };
 
     try {
@@ -27,7 +29,7 @@ function CommentInputBox({ postId }) {
         comments: firebase.firestore.FieldValue.arrayUnion(comment),
       });
     } catch (error) {
-      console.log("Faile comment posting");
+      console.log("Failed comment posting");
     }
   };
 
