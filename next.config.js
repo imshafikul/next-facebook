@@ -12,6 +12,7 @@ module.exports = {
       "api.time.com",
       "thumbor.forbes.com",
       "images.unsplash.com",
+      "static.xx.fbcdn.net",
     ],
   },
 };

@@ -16,7 +16,7 @@ function HeaderLeft() {
           type="text"
           name="search"
           placeholder="Search Facebook"
-          className="flex items-center bg-transparent placeholder-gray-500 outline-none ml-2 flex-shrink"
+          className="flex items-center bg-transparent placeholder-gray-500 outline-none ml-2 flex-shrink  md:min-w-[205px]"
         />
       </div>
     </div>
