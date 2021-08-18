@@ -33,7 +33,7 @@ function Post({ id, name, image, message, postImage, timestamp, comments }) {
       </div>
 
       {postImage && (
-        <div className="relative h-56 md:h-h2 lg:h-96 bg-white mb-3 border-2">
+        <div className="relative h-56 md:h-h2 lg:h-96 bg-white mb-3 border">
           <Image
             src={postImage}
             objectFit="cover"
