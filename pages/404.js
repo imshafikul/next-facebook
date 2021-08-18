@@ -12,13 +12,14 @@ function Fout0Four() {
           width={110}
           height={110}
           layout="fixed"
+          alt="Not found image"
         />
         <h1 className="font-bold text-gray-600 text-lg mt-5">
-          This Page Isn't Available
+          This Page Isn&apos;t Available
         </h1>
         <p className=" text-gray-600">
           The link may be broken, or the page may have been <br /> removed.
-          Check to see if the link you're trying to open is <br /> correct.
+          Check to see if the link you&apos;re trying to open is <br /> correct.
         </p>
         <Link href="/">
           <a className="bg-blue-500 hover:bg-blue-600 text-white py-2 mt-3 px-10 rounded-lg font-medium transition">
