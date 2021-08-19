@@ -1,3 +1,4 @@
+import moment from "moment";
 import UserAvatar from "../Common/UserAvatar";
 
 function CommentCard({ message, timestamp, user }) {
@@ -9,6 +10,16 @@ function CommentCard({ message, timestamp, user }) {
         <div className="bg-gray-100 rounded-2xl p-3">
           <p className="text-sm">{name}</p>
           <p className="text-xs text-gray-700">{message}</p>
+        </div>
+
+        <div className="flex text-xs space-x-2 text-gray-700 mt-1">
+          <p className="ml-2">
+            {timestamp
+              ? moment(new Date(timestamp?.toDate().toLocaleString())).fromNow()
+              : ""}
+          </p>
+          <button>Link</button>
+          <button>Reply</button>
         </div>
       </div>
     </div>
