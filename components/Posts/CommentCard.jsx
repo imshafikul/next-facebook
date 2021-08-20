@@ -14,9 +14,7 @@ function CommentCard({ message, timestamp, user }) {
 
         <div className="flex text-xs space-x-2 text-gray-700 mt-1">
           <p className="ml-2">
-            {timestamp
-              ? moment(new Date(timestamp?.toDate().toLocaleString())).fromNow()
-              : ""}
+            {timestamp ? moment(new Date(timestamp?.toDate())).fromNow() : ""}
           </p>
           <button>Like</button>
           <button>Reply</button>

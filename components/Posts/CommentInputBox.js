@@ -46,7 +46,7 @@ function CommentInputBox({ postId }) {
           className="bg-transparent outline-none flex-1"
           ref={inputRef}
         />
-        <div className="flex ml-2">
+        <div className="hidden md:flex ml-2">
           <EmojiHappyIcon className="h-8 w-8 p-1 hover:bg-gray-200 rounded-full font-light cursor-pointer text-gray-500" />
           <CameraIcon className="h-8 w-8 p-1 hover:bg-gray-200 rounded-full font-light cursor-pointer text-gray-500" />
         </div>

@@ -22,9 +22,7 @@ function Post({ id, name, image, message, postImage, timestamp, comments }) {
             <p className="font-medium m-0">{name}</p>
             <span className="text-gray-400 text-xs">
               {timestamp
-                ? moment(
-                    new Date(timestamp?.toDate().toLocaleString())
-                  ).fromNow()
+                ? moment(new Date(timestamp?.toDate())).fromNow()
                 : "Loading..."}
             </span>
           </div>
