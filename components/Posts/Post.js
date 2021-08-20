@@ -57,14 +57,14 @@ function Post({ id, name, image, message, postImage, timestamp, comments }) {
         <hr className="my-1" />
 
         <div className="flex justify-between items-center">
-          <div className="flex justify-center flex-1 cursor-pointer hover:bg-gray-100 py-2 rounded-md text-gray-600 text-md font-md">
-            <ThumbUpIcon className="h-6 mr-1" /> Like
+          <div className="flex justify-center flex-1 cursor-pointer hover:bg-gray-100 py-2 rounded-md text-gray-600 text-xs md:text-base font-md">
+            <ThumbUpIcon className="h-4 md:h-6 mr-1" /> Like
           </div>
-          <div className="flex justify-center flex-1 cursor-pointer hover:bg-gray-100 py-2 rounded-md text-gray-600 text-md font-md">
-            <ChatIcon className="h-6 mr-1" /> Comment
+          <div className="flex justify-center flex-1 cursor-pointer hover:bg-gray-100 py-2 rounded-md text-gray-600 text-xs md:text-base font-md">
+            <ChatIcon className="h-4 md:h-6 mr-1" /> Comment
           </div>
-          <div className="flex justify-center flex-1 cursor-pointer hover:bg-gray-100 py-2 rounded-md text-gray-600 text-md font-md">
-            <ShareIcon className="h-6 mr-1" /> Share
+          <div className="flex justify-center flex-1 cursor-pointer hover:bg-gray-100 py-2 rounded-md text-gray-600 text-xs md:text-base font-md">
+            <ShareIcon className="h-4 md:h-6 mr-1" /> Share
           </div>
         </div>
         <hr className="my-1" />

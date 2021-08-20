@@ -122,18 +122,22 @@ function InputBox() {
 
       <hr className="my-3" />
 
-      <div className="flex justify-center ">
-        <button className="flex items-center px-6 py-1 hover:bg-gray-100 rounded-md">
-          <VideoCameraIcon className="w-8 text-red-500" />
-          <span className="text-gray-500 font-medium ml-2">Live Video</span>
+      <div className="flex justify-center overflow-x-scroll">
+        <button className="hidden md:flex items-center px-2 md:px-6 py-1 hover:bg-gray-100 rounded-md">
+          <VideoCameraIcon className="w-5 md:w-8 text-red-500" />
+          <span className="text-gray-500 text-xs md:text-base ml-2">
+            Live Video
+          </span>
         </button>
 
         <button
           onClick={() => fileInputRef.current.click()}
-          className="flex items-center px-6 py-1 hover:bg-gray-100 rounded-md"
+          className="flex items-center px-2 md:px-6 py-1 hover:bg-gray-100 rounded-md"
         >
-          <PhotographIcon className="w-8 text-green-500" />
-          <span className="text-gray-500 font-medium ml-2">Photo/Video</span>
+          <PhotographIcon className="w-5 md:w-8 text-green-500" />
+          <span className="text-gray-500 text-xs md:text-base ml-2">
+            Photo/Video
+          </span>
           <input
             className="hidden"
             type="file"
@@ -142,9 +146,9 @@ function InputBox() {
             onChange={handleFileChange}
           />
         </button>
-        <button className="flex items-center px-6 py-1 hover:bg-gray-100 rounded-md">
-          <EmojiHappyIcon className="w-8 text-yellow-500" />
-          <span className="text-gray-400 font-medium ml-2">
+        <button className="flex items-center px-2 md:px-6 py-1 hover:bg-gray-100 rounded-md">
+          <EmojiHappyIcon className="w-5 md:w-8 text-yellow-500" />
+          <span className="text-gray-500 text-xs md:text-base ml-2">
             Feeling/Activity
           </span>
         </button>

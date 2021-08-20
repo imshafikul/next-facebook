@@ -12,7 +12,7 @@ function HeaderRight() {
   const [session] = useSession();
 
   return (
-    <div className="flex items-center justify-end sm:space-x-2">
+    <div className="hidden md:flex items-center justify-end sm:space-x-2">
       <div
         className="flex items-center p-1 rounded-full hover:bg-gray-100 cursor-pointer"
         onClick={signOut}

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function StoryCard({ name, src, avatar }) {
   return (
-    <div className="relative h-14 w-14 md:h-20 md:w-20 lg:h-56 lg:w-32 p-3 cursor-pointer transition duration-200 transform ease-in hover:scale-105 group">
+    <div className="relative h-10 w-10 md:h-20 md:w-20 lg:h-56 lg:w-32 p-3 cursor-pointer transition duration-200 transform ease-in hover:scale-105 group">
       <Image
         src={src}
         layout="fill"
